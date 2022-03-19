@@ -6,9 +6,9 @@ ROS packages. Communication in ROS can be divided into 3 groups.
 -services
 -actions
 
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
-
+Markup : * Bullet list
+              * Nested bullet
+                  * Sub-nested bullet etc
+          * Bullet list item 2
+          
 ![img_3.png](img_3.png)
