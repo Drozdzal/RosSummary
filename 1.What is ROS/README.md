@@ -11,4 +11,10 @@ Markup : * Bullet list
                   * Sub-nested bullet etc
           * Bullet list item 2
           
+          
+ Markup : 1. A numbered list
+              1. A nested numbered list
+              2. Which is numbered
+          2. Which is numbered
+          
 ![img_3.png](img_3.png)
