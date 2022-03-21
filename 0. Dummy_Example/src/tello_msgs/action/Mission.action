@@ -1,0 +1,10 @@
+#goal definition
+uint8 number_of_waypoints
+uint8[] list_of_waypoints
+---
+#result definition
+bool finished_move
+---
+#feedback definition
+int32 waypoint
+
