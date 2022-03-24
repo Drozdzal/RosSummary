@@ -31,7 +31,7 @@ class VideoCapture:
         return self.q.get()
 
 
-def talker():
+def image_publisher():
     try:
         vid = VideoCapture()
     except IOError:
@@ -53,6 +53,6 @@ def talker():
 
 if __name__ == '__main__':
     try:
-        talker()
+        image_publisher()
     except rospy.ROSInterruptException:
         pass

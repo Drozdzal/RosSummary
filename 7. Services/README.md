@@ -1,2 +1,4 @@
 # ROS Services
-This repo contains quick introduction and examples of code for Robotic Operating System
+
+Service is another way of communication which can be added to ROS node. 
+In ROS1, services works synchronously. Let's say that t is stuck until the server responds (or fails).

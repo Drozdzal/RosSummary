@@ -5,7 +5,7 @@ This is Number 0 of ros_tutorial shows usage of ROS. Code is definetely not perf
 - Computer
 - Tello drone
 - Carrot
-- Onion
+- blue roller
 
 Whole project contains all types of ROS messages. It shows that if we once create move service or command service
 which connect software with hardware then it is easy to use it in different usages
