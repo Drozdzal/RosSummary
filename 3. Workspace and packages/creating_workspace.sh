@@ -20,3 +20,4 @@ cp setup.py ${project_name}/src/${project_name}_msgs/setup.py
 cp setup.py ${project_name}/src/${project_name}_vision/setup.py
 
  
+#catkin_create_pkg bringup std_msgs rospy roscpp

@@ -6,5 +6,5 @@ uint8[] list_of_waypoints
 bool finished_move
 ---
 #feedback definition
-int32 waypoint
+int32 current_waypoint
 

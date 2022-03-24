@@ -7,7 +7,6 @@ Script for checking whether drone knows how to move in local or not it needs ser
 '''
 
 def move():
-        rospy.init_node('move_xy_pub', anonymous=True)
         rate = rospy.Rate(1)  # 1Hz
 
         while not rospy.is_shutdown():
@@ -23,15 +22,13 @@ def move():
 
 
 if __name__ == '__main__':
-    try:
-        rospy.wait_for_service('command')
-        ask_command = rospy.ServiceProxy('command', Command)
-        req = CommandRequest()
-        req.message='start'
-        ask_command(req)
-        rospy.wait_for_service('command')
-        req.message = 'take_off'
-        ask_command(req)
-        move()
-    except rospy.ROSInterruptException:
-        pass
+    rospy.init_node('move_xy_pub', anonymous=True)
+    rospy.wait_for_service('command')
+    ask_command = rospy.ServiceProxy('command', Command)
+    req = CommandRequest()
+    req.message='start'
+    ask_command(req)
+    rospy.wait_for_service('command')
+    req.message = 'take_off'
+    ask_command(req)
+    move()
